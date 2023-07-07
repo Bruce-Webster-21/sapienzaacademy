@@ -227,3 +227,32 @@ footer p {
 footer p a {
   color: #ffde59;
 }
+/*----------------------------------------------------------------------------------*/
+/* Whatsapp Icon */
+/*----------------------------------------------------------------------------------*/
+.whatsapp {
+  background-color: #12a81a;
+  right: 2%;
+  bottom: 4%;
+}
+.instagram {
+  background-color: #cf209b;
+  right: 2%;
+  bottom: 12%;
+}
+.icon {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+.whatsapp img {
+  width: 25px;
+  filter: invert(1);
+}
+.instagram img {
+  width: 23px;
+  filter: invert(1);
+}
