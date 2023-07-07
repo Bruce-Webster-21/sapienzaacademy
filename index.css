@@ -203,7 +203,7 @@ header a {
   color: #ffde59;
 }
 /*----------------------------------------------------------------------------------*/
-/* Testimonial Section */
+/* Footer */
 /*----------------------------------------------------------------------------------*/
 footer {
   background-color: #303030;
@@ -247,6 +247,7 @@ footer p a {
   border-radius: 50%;
   display: flex;
   justify-content: center;
+  z-index: 2;
 }
 .whatsapp img {
   width: 25px;
@@ -255,4 +256,54 @@ footer p a {
 .instagram img {
   width: 23px;
   filter: invert(1);
+}
+/*----------------------------------------------------------------------------------*/
+/* Media Queeris for Responsive Design */
+/*----------------------------------------------------------------------------------*/
+@media only screen and (max-width: 950px) {
+  .package-container {
+    flex-direction: column;
+  }
+  .package {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .header-container {
+    padding: 0 25px;
+  }
+  .circle {
+    display: none;
+  }
+  header h2 {
+    margin-top: 50px;
+    font-size: 2.5rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
+  header img {
+    position: absolute;
+    opacity: 0.4;
+    top: 15%;
+    width: 500px;
+    z-index: -1;
+  }
+  header a {
+    margin: 340px 0 0 0;
+    backdrop-filter: blur(5px);
+  }
+  header .break {
+    display: none;
+  }
+  .img-bg a {
+    margin: auto 25px;
+  }
+  .testimonial-section {
+    flex-direction: column;
+  }
+  .testimonial {
+    margin: 0 auto;
+  }
 }
