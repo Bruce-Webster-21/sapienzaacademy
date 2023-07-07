@@ -179,7 +179,6 @@ header a {
 /*----------------------------------------------------------------------------------*/
 /* Testimonial Section */
 /*----------------------------------------------------------------------------------*/
-
 .testimonial-section {
   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
@@ -201,5 +200,30 @@ header a {
   border-radius: 50%;
 }
 .testimonial h3 {
+  color: #ffde59;
+}
+/*----------------------------------------------------------------------------------*/
+/* Testimonial Section */
+/*----------------------------------------------------------------------------------*/
+footer {
+  background-color: #303030;
+  margin-top: 100px;
+  padding: 50px 0;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+footer h4 {
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+}
+footer p {
+  font-size: 0.8rem;
+}
+footer p a {
   color: #ffde59;
 }
