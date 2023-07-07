@@ -70,7 +70,9 @@ header a {
   background-color: #303030;
   z-index: -1;
 }
-
+/*----------------------------------------------------------------------------------*/
+/* About Section */
+/*----------------------------------------------------------------------------------*/
 .about {
   background-image: url(/img/bg0.jpg);
   background-attachment: fixed;
@@ -93,8 +95,12 @@ header a {
   font-size: 1rem;
   text-align: justify;
 }
-
+/*----------------------------------------------------------------------------------*/
+/* Services Section */
+/*----------------------------------------------------------------------------------*/
 .services {
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  color: #222;
   padding: 0 25px;
   max-width: 1000px;
   margin: 0 auto;
@@ -104,7 +110,7 @@ header a {
   font-size: 35px;
 }
 .services p {
-  padding: 30px 0 100px 0;
+  padding: 30px 0 40px 0;
   font-size: 1rem;
   text-align: justify;
 }
@@ -117,9 +123,37 @@ header a {
 .package {
   width: 100%;
   height: 400px;
-  background-color: grey;
+  padding: 25px;
 }
-
+.package h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.package ul {
+  padding: 25px 0 0 22px;
+}
+.package a {
+  display: block;
+  margin: 150px 0 0 0;
+  color: #222;
+  font-weight: 600;
+  padding: 20px 0;
+  border: 1px solid #222;
+  letter-spacing: 5px;
+  text-align: center;
+}
+.light-gray-bg {
+  background-color: #dddddd;
+}
+.gray-bg {
+  background-color: #bdb7b7;
+}
+.yellow-bg {
+  background-color: #ffde59;
+}
+/*----------------------------------------------------------------------------------*/
+/* Img BackGround with Button */
+/*----------------------------------------------------------------------------------*/
 .img-bg {
   background-image: url(/img/bg0.jpg);
   background-attachment: fixed;
