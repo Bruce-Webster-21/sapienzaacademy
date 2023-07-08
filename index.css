@@ -324,3 +324,32 @@ footer p a {
     margin: 0 auto;
   }
 }
+
+/*----------------------------------------------------------------------------------*/
+/* Evaluation Container */
+/*----------------------------------------------------------------------------------*/
+.evaluation-container {
+  margin: 50px auto;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.answer-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 15px;
+  gap: 10px;
+}
+.answer-container input {
+  display: flex;
+  justify-content: left;
+}
+.answer {
+  display: flex;
+  gap: 5px;
+}
+.answer p {
+  width: 300px;
+}
