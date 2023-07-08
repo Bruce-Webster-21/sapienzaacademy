@@ -249,13 +249,13 @@ footer p a {
 /*----------------------------------------------------------------------------------*/
 .whatsapp {
   background-color: #12a81a;
-  right: 2%;
-  bottom: 4%;
+  right: 20px;
+  bottom: 30px;
 }
 .instagram {
   background-color: #cf209b;
-  right: 2%;
-  bottom: 12%;
+  right: 20px;
+  bottom: 90px;
 }
 .icon {
   width: 50px;
@@ -301,14 +301,14 @@ footer p a {
     font-size: 1rem;
   }
   header img {
-    top: 200px;
+    bottom: -10%;
     position: absolute;
     opacity: 0.4;
     width: 300px;
     z-index: -1;
   }
   header a {
-    margin: 300px 0 0 0;
+    margin: 50px 0 0 0;
     backdrop-filter: blur(5px);
   }
   header .break {
