@@ -1,73 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sapienza Academy | Practice Makes Perfect</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sapienza Academy | Practice Makes Perfect</title>
-  <link rel="stylesheet" href="index.css">
-</head>
-
-<body>
-  <form id="form" class="evaluation-container">
-
-    <div class="question">
-      <p>Question</p>
-      <div class="answer-container">
-        <div class="answer">
-          <input name="answer1" required type="radio">
-          <div>
-            <p>1st answer</p>
+  <body>
+    <form id="form" class="evaluation-container">
+      <!------------------------------- 1st Question ------------------------------->
+      <div class="question">
+        <p>Question</p>
+        <div class="answer-container">
+          <div class="answer">
+            <input 
+              name="answers-1" 
+              type="radio" 
+              required />
+            <div>
+              <p>1st answer</p>
+            </div>
           </div>
-        </div>
-        <div class="answer">
-          <input id="correct1" name="answer1" required type="radio">
-          <div>
-            <p>2nd answer</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="question">
-      <p>Question</p>
-      <div class="answer-container">
-        <div class="answer">
-          <input id="correct2" name="answer2" required  type="radio">
-          <div>
-            <p>1st answer</p>
-          </div>
-        </div>
-        <div class="answer">
-          <input name="answer2" required type="radio">
-          <div>
-            <p>2nd answer</p>
+          <div class="answer">
+            <input 
+              id="correct-1" 
+              name="answers-1" 
+              type="radio" 
+              required />
+            <div>
+              <p>2nd answer</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="question">
-      <p>Question</p>
-      <div class="answer-container">
-        <div class="answer">
-          <input id="correct3" name="answer3" required  type="radio">
-          <div>
-            <p>1st answer</p>
+      <!------------------------------- 2nd Question ------------------------------->
+      <div class="question">
+        <p>Question</p>
+        <div class="answer-container">
+          <div class="answer">
+            <input 
+              name="answers-2" 
+              type="radio" 
+              required />
+            <div>
+              <p>1st answer</p>
+            </div>
           </div>
-        </div>
-        <div class="answer">
-          <input name="answer3" required type="radio">
-          <div>
-            <p>2nd answer</p>
+          <div class="answer">
+            <input 
+              id="correct-2" 
+              name="answers-2" 
+              type="radio" 
+              required />
+            <div>
+              <p>2nd answer</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <button>Submit</button>
-  </form>
-</body>
 
-<script src="evaluation.js"></script>
+      <!------------------------------- 3rd Question ------------------------------->
+      <div class="question">
+        <p>Question</p>
+        <div class="answer-container">
+          <div class="answer">
+            <input 
+              name="answers-3" 
+              type="radio" 
+              required />
+            <div>
+              <p>1st answer</p>
+            </div>
+          </div>
+          <div class="answer">
+            <input 
+              id="correct-3" 
+              name="answers-3" 
+              type="radio" 
+              required />
+            <div>
+              <p>2nd answer</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <h1 id="score"></h1>
+      <button id="button">Submit</button>
+    </form>
+  </body>
+
+  <script src="evaluation.js"></script>
 </html>
