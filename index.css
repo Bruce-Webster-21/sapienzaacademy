@@ -335,20 +335,33 @@ footer p a {
   flex-direction: column;
   gap: 35px;
 }
-.answer-container {
+.question {
+  border: 1px solid rgba(255, 255, 255, 0.507);
+  padding: 15px;
+  border-radius: 15px;
+}
+.question-txt {
+  font-size: 17px;
+}
+.line {
   margin-top: 10px;
+  opacity: 0.5;
+}
+.answers-container {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   width: 15px;
   gap: 10px;
 }
-.answer-container input {
+.answers-container input {
   display: flex;
   justify-content: left;
 }
 .answer {
   display: flex;
   gap: 5px;
+  font-size: 14px;
 }
 .answer p {
   width: 300px;

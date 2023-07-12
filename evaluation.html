@@ -11,15 +11,16 @@
     <form id="form" class="evaluation-container">
       <!------------------------------- 1st Question ------------------------------->
       <div class="question">
-        <p>Question</p>
-        <div class="answer-container">
+        <p class="question-txt">Can I park here?</p>
+        <hr class="line">
+        <div class="answers-container">
           <div class="answer">
             <input 
               name="answers-1" 
               type="radio" 
               required />
             <div>
-              <p>1st answer</p>
+              <p>Sorry, I did that.</p>
             </div>
           </div>
           <div class="answer">
@@ -29,66 +30,25 @@
               type="radio" 
               required />
             <div>
-              <p>2nd answer</p>
+              <p>Only for half an hour.</p>
+            </div>
+          </div>
+          <div class="answer">
+            <input 
+              id="correct-1" 
+              name="answers-1" 
+              type="radio" 
+              required />
+            <div>
+              <p>It's the same place.</p>
             </div>
           </div>
         </div>
       </div>
 
-      <!------------------------------- 2nd Question ------------------------------->
-      <div class="question">
-        <p>Question</p>
-        <div class="answer-container">
-          <div class="answer">
-            <input 
-              name="answers-2" 
-              type="radio" 
-              required />
-            <div>
-              <p>1st answer</p>
-            </div>
-          </div>
-          <div class="answer">
-            <input 
-              id="correct-2" 
-              name="answers-2" 
-              type="radio" 
-              required />
-            <div>
-              <p>2nd answer</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!------------------------------- 3rd Question ------------------------------->
-      <div class="question">
-        <p>Question</p>
-        <div class="answer-container">
-          <div class="answer">
-            <input 
-              name="answers-3" 
-              type="radio" 
-              required />
-            <div>
-              <p>1st answer</p>
-            </div>
-          </div>
-          <div class="answer">
-            <input 
-              id="correct-3" 
-              name="answers-3" 
-              type="radio" 
-              required />
-            <div>
-              <p>2nd answer</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <h1 id="score"></h1>
+      
       <button id="button">Submit</button>
+      <h1 id="score"></h1>
     </form>
   </body>
 
