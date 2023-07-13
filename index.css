@@ -367,3 +367,17 @@ footer p a {
 .answer p {
   width: 300px;
 }
+.btn {
+  margin: 0 20px;
+  padding: 10px 0;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  color: #222;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 15px;
+  border: none;
+  transition: 0.2s;
+}
+.btn:hover {
+  padding: 15px 0;
+}
