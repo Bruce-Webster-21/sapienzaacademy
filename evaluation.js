@@ -9,6 +9,7 @@ const correct7 = document.getElementById("correct-7");
 const correct8 = document.getElementById("correct-8");
 const correct9 = document.getElementById("correct-9");
 const correct10 = document.getElementById("correct-10");
+const correct11 = document.getElementById("correct-11");
 const score = document.getElementById("score");
 const button = document.getElementById("button");
 const array = [
@@ -21,7 +22,8 @@ const array = [
   correct7,
   correct8,
   correct9, 
-  correct10
+  correct10,
+  correct11
 ];
 
 let count = 0;
