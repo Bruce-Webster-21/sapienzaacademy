@@ -1,4 +1,6 @@
 const form = document.getElementById("form");
+const score = document.getElementById("score");
+const button = document.getElementById("button");
 const correct1 = document.getElementById("correct-1");
 const correct2 = document.getElementById("correct-2");
 const correct3 = document.getElementById("correct-3");
@@ -14,8 +16,16 @@ const correct12 = document.getElementById("correct-12");
 const correct13 = document.getElementById("correct-13");
 const correct14 = document.getElementById("correct-14");
 const correct15 = document.getElementById("correct-15");
-const score = document.getElementById("score");
-const button = document.getElementById("button");
+const correct16 = document.getElementById("correct-16");
+const correct17 = document.getElementById("correct-17");
+const correct18 = document.getElementById("correct-18");
+const correct19 = document.getElementById("correct-19");
+const correct20 = document.getElementById("correct-20");
+const correct21 = document.getElementById("correct-21");
+const correct22 = document.getElementById("correct-22");
+const correct23 = document.getElementById("correct-23");
+const correct24 = document.getElementById("correct-24");
+const correct25 = document.getElementById("correct-25");
 const array = [
   correct1,
   correct2,
@@ -31,7 +41,17 @@ const array = [
   correct12,
   correct13,
   correct14,
-  correct15
+  correct15,
+  correct16,
+  correct17,
+  correct18,
+  correct19,
+  correct20,
+  correct21,
+  correct22,
+  correct23,
+  correct24,
+  correct25
 ];
 
 let count = 0;
