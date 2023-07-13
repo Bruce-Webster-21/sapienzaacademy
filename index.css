@@ -339,6 +339,7 @@ footer p a {
   border: 1px solid rgba(255, 255, 255, 0.507);
   padding: 15px;
   border-radius: 15px;
+  margin: 0 20px;
 }
 .question-txt {
   font-size: 17px;
