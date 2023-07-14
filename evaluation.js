@@ -1,6 +1,3 @@
-const form = document.getElementById("form");
-const score = document.getElementById("score");
-const button = document.getElementById("button");
 const correct1 = document.getElementById("correct-1");
 const correct2 = document.getElementById("correct-2");
 const correct3 = document.getElementById("correct-3");
@@ -53,6 +50,10 @@ const array = [
   correct24,
   correct25
 ];
+
+const form = document.getElementById("form");
+const score = document.getElementById("score");
+const button = document.getElementById("button");
 
 let count = 0;
 
