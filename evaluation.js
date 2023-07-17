@@ -53,20 +53,34 @@ const array = [
 
 const form = document.getElementById("form");
 const score = document.getElementById("score");
+const level = document.getElementById("level")
 const button = document.getElementById("button");
 
-let count = 0;
+let count = 7;
 
 function handleSubmit(e) {
   e.preventDefault();
 
   array.forEach((answer) => {
     if (answer.checked) {
-      count++;
+     count++;
     }
   });
 
-  score.innerHTML = count;
+  function levelLogic() {
+    if (count == 25) {
+      return "B2";
+    } else if (count >= 16) {
+      return "B1";
+    } else if (count >= 8) {
+      return "A2";
+    } else if (count < 8) {
+      return "A1";
+    }
+  }
+
+  score.innerHTML = count + "/25";
+  level.innerHTML = levelLogic()
   button.style.display = "none";
 }
 
