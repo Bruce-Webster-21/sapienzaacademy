@@ -277,7 +277,7 @@ footer p a {
   filter: invert(1);
 }
 /*----------------------------------------------------------------------------------*/
-/* Media Queeris for Responsive Design */
+/* Media Queries for Responsive Design */
 /*----------------------------------------------------------------------------------*/
 @media only screen and (max-width: 950px) {
   .package-container {
