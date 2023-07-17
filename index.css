@@ -371,7 +371,6 @@ footer p a {
   width: 300px;
 }
 .btn {
-  margin: 0 20px;
   padding: 10px 0;
   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
   color: #222;
@@ -388,7 +387,8 @@ footer p a {
 /* Media Queries for Responsive Design for EVALUATION.HTML*/
 /*----------------------------------------------------------------------------------*/
 @media only screen and (max-width: 500px) {
-  .question {
+  .question,
+  .btn {
     margin: 0 20px;
   }
 }
