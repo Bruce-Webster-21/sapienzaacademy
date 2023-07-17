@@ -277,7 +277,7 @@ footer p a {
   filter: invert(1);
 }
 /*----------------------------------------------------------------------------------*/
-/* Media Queries for Responsive Design */
+/* Media Queries for Responsive Design for INDEX.HTML*/
 /*----------------------------------------------------------------------------------*/
 @media only screen and (max-width: 950px) {
   .package-container {
@@ -343,7 +343,6 @@ footer p a {
   border: 1px solid rgba(255, 255, 255, 0.507);
   padding: 15px;
   border-radius: 15px;
-  margin: 0 20px;
 }
 .question-txt {
   font-size: 14px;
@@ -384,4 +383,12 @@ footer p a {
 }
 .btn:hover {
   padding: 15px 0;
+}
+/*----------------------------------------------------------------------------------*/
+/* Media Queries for Responsive Design for EVALUATION.HTML*/
+/*----------------------------------------------------------------------------------*/
+@media only screen and (max-width: 500px) {
+  .question {
+    margin: 0 20px;
+  }
 }
