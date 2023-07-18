@@ -211,7 +211,7 @@ header a:hover {
   max-width: 300px;
   border: 1px solid white;
   padding: 40px 25px;
-  text-align: justify;
+  text-align: center;
   align-items: center;
 }
 .testimonial img {
