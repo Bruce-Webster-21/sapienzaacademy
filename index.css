@@ -418,9 +418,9 @@ footer p a {
   width: 0px;
   height: 10px;
   border-radius: 15px;
-  animation: progres 4s infinite linear;
+  animation: loading 4s infinite linear;
 }
-@keyframes progres {
+@keyframes loading {
   0% {
     width: 0%;
   }
