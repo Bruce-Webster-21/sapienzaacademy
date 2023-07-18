@@ -392,3 +392,48 @@ footer p a {
     margin: 0 20px;
   }
 }
+/*----------------------------------------------------------------------------------*/
+/* Loader */
+/*----------------------------------------------------------------------------------*/
+.loader-container {
+  z-index: 2;
+  position: fixed;
+  background-color: #222;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.loader {
+  top: 50%;
+  position: relative;
+  height: 30px;
+  width: 20%;
+  border: 10px solid #f4a261;
+  border-radius: 15px;
+}
+.loader .color {
+  position: absolute;
+  background-color: #ffffff;
+  width: 0px;
+  height: 10px;
+  border-radius: 15px;
+  animation: progres 4s infinite linear;
+}
+@keyframes progres {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 50%;
+  }
+  50% {
+    width: 75%;
+  }
+  75% {
+    width: 85%;
+  }
+  100% {
+    width: 100%;
+  }
+}
