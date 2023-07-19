@@ -1,5 +1,9 @@
-const loader = document.getElementById("loader-page")
+const loaderElement = document.getElementById("loader-page");
 
-setTimeout(() => {
-  loader.style.display = "none"
-}, 4000);
+const hideLoader = () => {
+  if (loaderElement) {
+    loaderElement.style.display = "none";
+  }
+};
+
+setTimeout(hideLoader, 4000);
