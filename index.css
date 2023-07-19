@@ -1,72 +1,89 @@
+/* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap");
 
+/* Variables */
+:root {
+  --primary-color: #222;
+  --secondary-color: #fff;
+}
+
+/* Global Reset */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* Body */
 body {
-  background-color: #222;
+  background-color: var(--primary-color);
   overflow-x: hidden;
 }
 
+/* Typography */
 h1,
 h2,
 p {
   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
+  color: var(--secondary-color);
 }
 
 a {
   text-decoration: none;
   font-family: Source Code Pro, Verdana, Geneva, Tahoma, sans-serif;
   transition: 0.2s;
+  color: var(--secondary-color);
 }
 
-/*----------------------------------------------------------------------------------*/
 /* Header */
-/*----------------------------------------------------------------------------------*/
 header {
   display: flex;
   margin: 0 auto;
   height: 100vh;
   max-width: 1000px;
 }
+
 .header-container {
   margin-top: 80px;
   padding-left: 25px;
 }
+
 header h1 {
   font-size: 15px;
 }
+
 header h2 {
   margin-top: 150px;
   font-size: 45px;
 }
+
 header p {
   margin-top: 15px;
   font-size: 20px;
 }
+
 header a {
   display: block;
   margin: 150px 0 100px 0;
-  color: white;
   padding: 20px 30px;
-  border: 1px solid white;
+  border: 1px solid var(--secondary-color);
   letter-spacing: 5px;
   text-align: center;
+  color: var(--secondary-color);
 }
+
 header a:hover {
   background-color: rgba(255, 255, 255, 0.849);
-  color: #222;
+  color: var(--primary-color);
   font-weight: 600;
 }
+
 .header-img {
   margin-top: 60px;
   height: 600px;
   object-fit: contain;
 }
+
 .circle {
   top: -120px;
   right: -120px;
@@ -77,9 +94,8 @@ header a:hover {
   background-color: #303030;
   z-index: -1;
 }
-/*----------------------------------------------------------------------------------*/
+
 /* About Section */
-/*----------------------------------------------------------------------------------*/
 .about {
   background-image: url(/img/bg0.jpg);
   background-attachment: fixed;
@@ -88,84 +104,97 @@ header a:hover {
   -webkit-box-shadow: 0px 0px 56px 24px rgba(0, 0, 0, 0.4) inset;
   -moz-box-shadow: 0px 0px 56px 24px rgba(0, 0, 0, 0.4) inset;
 }
+
 .about section {
   padding: 0 25px;
   max-width: 1000px;
   margin: 0 auto;
 }
+
 .about h2 {
   padding-top: 100px;
   font-size: 35px;
 }
+
 .about p {
   padding: 30px 0 100px 0;
   font-size: 1rem;
   text-align: justify;
 }
-/*----------------------------------------------------------------------------------*/
+
 /* Services Section */
-/*----------------------------------------------------------------------------------*/
 .services {
-  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
-  color: #222;
+  color: var(--primary-color);
   padding: 0 25px;
   max-width: 1000px;
   margin: 0 auto;
 }
+
 .services h2 {
   padding-top: 100px;
   font-size: 35px;
 }
+
 .services p {
   padding: 30px 0 40px 0;
   font-size: 1rem;
   text-align: justify;
 }
+
 .package-container {
   display: flex;
   width: 100%;
   justify-content: space-between;
   gap: 35px;
 }
+
 .package {
   width: 100%;
   height: 400px;
   padding: 25px;
 }
+
 .package h3 {
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
 }
+
 .package ul {
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
   padding: 25px 0 0 22px;
 }
+
 .package a {
   display: block;
   margin: 150px 0 0 0;
-  color: #222;
-  font-weight: 600;
   padding: 20px 0;
-  border: 1px solid #222;
+  color: var(--primary-color);
+  font-weight: 600;
+  border: 1px solid var(--primary-color);
   letter-spacing: 5px;
   text-align: center;
 }
+
 .package a:hover {
-  background-color: #222;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   font-weight: 400;
 }
+
 .light-gray-bg {
   background-color: #dddddd;
 }
+
 .gray-bg {
   background-color: #bdb7b7;
 }
+
 .yellow-bg {
   background-color: #ffde59;
 }
-/*----------------------------------------------------------------------------------*/
+
 /* Img BackGround with Button */
-/*----------------------------------------------------------------------------------*/
 .img-bg {
   background-image: url(/img/bg0.jpg);
   background-attachment: fixed;
@@ -177,53 +206,56 @@ header a:hover {
   -webkit-box-shadow: 0px 0px 56px 24px rgba(0, 0, 0, 0.4) inset;
   -moz-box-shadow: 0px 0px 56px 24px rgba(0, 0, 0, 0.4) inset;
 }
+
 .img-bg a {
   margin: auto;
   display: block;
   padding: 20px 60px;
-  color: white;
-  background-color: #22222242;
-  border: 1px solid white;
+  color: var(--secondary-color);
+  background-color: rgba(34, 34, 34, 0.479);
+  border: 1px solid var(--secondary-color);
   letter-spacing: 5px;
   text-align: center;
   backdrop-filter: blur(5px);
   -moz-backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
+
 .img-bg a:hover {
   background-color: rgba(255, 255, 255, 0.849);
-  color: #222;
+  color: var(--primary-color);
   font-weight: 600;
 }
-/*----------------------------------------------------------------------------------*/
+
 /* Testimonial Section */
-/*----------------------------------------------------------------------------------*/
 .testimonial-section {
-  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
   justify-content: center;
   gap: 35px;
 }
+
 .testimonial {
   display: flex;
   flex-direction: column;
   gap: 25px;
   max-width: 300px;
-  border: 1px solid white;
+  border: 1px solid var(--secondary-color);
   padding: 40px 25px;
   text-align: center;
   align-items: center;
 }
+
 .testimonial img {
   width: 100px;
   border-radius: 50%;
 }
+
 .testimonial h3 {
   color: #ffde59;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
 }
-/*----------------------------------------------------------------------------------*/
+
 /* Footer */
-/*----------------------------------------------------------------------------------*/
 footer {
   background-color: #303030;
   margin-top: 100px;
@@ -234,31 +266,35 @@ footer {
   flex-direction: column;
   gap: 7px;
 }
+
 footer h4 {
   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  color: white;
+  color: var(--secondary-color);
 }
+
 footer p {
   font-size: 0.8rem;
 }
+
 footer p a {
   color: #ffde59;
 }
-/*----------------------------------------------------------------------------------*/
-/* Whatsapp Icon */
-/*----------------------------------------------------------------------------------*/
+
+/* Whatsapp and Instagram Icons */
 .whatsapp {
   background-color: #12a81a;
   right: 20px;
   bottom: 30px;
 }
+
 .instagram {
   background-color: #cf209b;
   right: 20px;
   bottom: 90px;
 }
+
 .icon {
   width: 50px;
   height: 50px;
@@ -268,40 +304,43 @@ footer p a {
   justify-content: center;
   z-index: 2;
 }
-.whatsapp img {
+
+.whatsapp img,
+.instagram img {
   width: 25px;
   filter: invert(1);
 }
-.instagram img {
-  width: 23px;
-  filter: invert(1);
-}
-/*----------------------------------------------------------------------------------*/
-/* Media Queries for Responsive Design for INDEX.HTML*/
-/*----------------------------------------------------------------------------------*/
+
+/* Media Queries for Responsive Design for INDEX.HTML */
 @media only screen and (max-width: 950px) {
   .package-container {
     flex-direction: column;
   }
+
   .package {
     max-width: 400px;
     margin: 0 auto;
   }
 }
+
 @media only screen and (max-width: 750px) {
   .header-container {
     padding: 0 25px;
   }
+
   .circle {
     display: none;
   }
+
   header h2 {
     margin-top: 50px;
     font-size: 2.5rem;
   }
+
   header p {
     font-size: 1rem;
   }
+
   header img {
     bottom: -10%;
     position: absolute;
@@ -309,29 +348,32 @@ footer p a {
     width: 300px;
     z-index: -1;
   }
+
   header a {
     margin: 50px 0 0 0;
     backdrop-filter: blur(5px);
     -moz-backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
   }
+
   header .break {
     display: none;
   }
+
   .img-bg a {
     margin: auto 25px;
   }
+
   .testimonial-section {
     flex-direction: column;
   }
+
   .testimonial {
     margin: 0 auto;
   }
 }
 
-/*----------------------------------------------------------------------------------*/
 /* Evaluation Container */
-/*----------------------------------------------------------------------------------*/
 .evaluation-container {
   margin: 50px auto;
   max-width: 400px;
@@ -339,18 +381,22 @@ footer p a {
   flex-direction: column;
   gap: 35px;
 }
+
 .question {
   border: 1px solid rgba(255, 255, 255, 0.507);
   padding: 15px;
   border-radius: 15px;
 }
+
 .question-txt {
   font-size: 14px;
 }
+
 .line {
   margin-top: 10px;
   opacity: 0.5;
 }
+
 .answers-container {
   margin-top: 20px;
   display: flex;
@@ -358,43 +404,46 @@ footer p a {
   width: 15px;
   gap: 10px;
 }
+
 .answers-container input {
   display: flex;
   justify-content: left;
 }
+
 .answer {
   display: flex;
   gap: 5px;
   font-size: 14px;
 }
+
 .answer p {
   width: 300px;
 }
+
 .btn {
   padding: 10px 0;
   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
-  color: #222;
+  color: var(--primary-color);
   font-weight: 600;
   font-size: 16px;
   border-radius: 15px;
   border: none;
   transition: 0.2s;
 }
+
 .btn:hover {
   padding: 15px 0;
 }
-/*----------------------------------------------------------------------------------*/
-/* Media Queries for Responsive Design for EVALUATION.HTML*/
-/*----------------------------------------------------------------------------------*/
+
+/* Media Queries for Responsive Design for EVALUATION.HTML */
 @media only screen and (max-width: 500px) {
   .question,
   .btn {
     margin: 0 20px;
   }
 }
-/*----------------------------------------------------------------------------------*/
+
 /* Loader */
-/*----------------------------------------------------------------------------------*/
 .loader-container {
   z-index: 2;
   position: fixed;
@@ -404,6 +453,7 @@ footer p a {
   display: flex;
   justify-content: center;
 }
+
 .loader {
   top: 50%;
   position: relative;
@@ -412,11 +462,13 @@ footer p a {
   border: 10px solid #f4a261;
   border-radius: 15px;
 }
+
 .loader-txt {
   position: fixed;
   top: 46%;
   font-size: 20px;
 }
+
 .loader .color {
   position: absolute;
   background-color: #ffffff;
@@ -425,6 +477,7 @@ footer p a {
   border-radius: 15px;
   animation: loading 4s infinite linear;
 }
+
 @keyframes loading {
   0% {
     width: 0%;
