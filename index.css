@@ -488,7 +488,7 @@ footer p a {
   width: 0px;
   height: 10px;
   border-radius: 15px;
-  animation: loading 4s infinite linear;
+  animation: loading 10s infinite linear;
 }
 
 @keyframes loading {

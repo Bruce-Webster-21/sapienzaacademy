@@ -6,4 +6,4 @@ const hideLoader = () => {
   }
 };
 
-setTimeout(hideLoader, 4000);
+setTimeout(hideLoader, 10000);
