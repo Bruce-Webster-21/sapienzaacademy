@@ -1,4 +1,4 @@
-const array = Array.from({ length: 6 }, (_, i) => document.getElementById(`correct-${i + 1}`));
+const array = Array.from({ length: 10 }, (_, i) => document.getElementById(`correct-${i + 1}`));
 const form = document.getElementById("form");
 const score = document.getElementById("score");
 const level = document.getElementById("level");
