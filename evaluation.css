@@ -66,6 +66,10 @@
   padding: 15px 0;
 }
 
+.score-level-container {
+  text-align: center;
+}
+
 /* Media Queries for Responsive Design for EVALUATION.HTML */
 @media only screen and (max-width: 500px) {
   .question,
