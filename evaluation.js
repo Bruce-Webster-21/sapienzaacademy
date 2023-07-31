@@ -3,6 +3,7 @@ const form = document.getElementById("form");
 const score = document.getElementById("score");
 const level = document.getElementById("level");
 const button = document.getElementById("button");
+const questions = document.getElementById("question-list")
 
 let count = 0;
 
@@ -21,6 +22,7 @@ function handleSubmit(e) {
   score.textContent = `${count}/25`;
   level.textContent = levelLogic();
   button.style.display = "none";
+  questions.style.display = "none"
 }
 
 form.addEventListener("submit", handleSubmit);
